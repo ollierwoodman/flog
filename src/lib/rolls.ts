@@ -7,6 +7,7 @@ export const ROLLS: roll[] = [
     developedDate: new Date(2024, 10, 12),
     forewordPath: "/rolls/first/foreword.md",
     epiloguePath: "/rolls/first/epilogue.md",
+    thumbnailPath: "/roll_thumbs/first.JPG",
     images: [
       {
         path: "/rolls/first/00.jpg",
@@ -199,4 +200,209 @@ export const ROLLS: roll[] = [
       speed: 200,
     },
   },
+  {
+    id: "manual",
+    name: "Manual",
+    chineseName: "手",
+    description: "First roll of film shooting completely manual.",
+    developedDate: new Date(2024, 10, 24),
+    forewordPath: "/rolls/manual/foreword.md",
+    epiloguePath: "/rolls/manual/epilogue.md",
+    thumbnailPath: "/roll_thumbs/manual.JPG",
+    "images": [
+      {
+        "path": "/rolls/manual/00.JPG",
+        "width": 2009,
+        "height": 1344
+      },
+      {
+        "path": "/rolls/manual/01.JPG",
+        "width": 2009,
+        "height": 1344
+      },
+      {
+        "path": "/rolls/manual/02.JPG",
+        "width": 1344,
+        "height": 2009
+      },
+      {
+        "path": "/rolls/manual/03.JPG",
+        "width": 2009,
+        "height": 1344
+      },
+      {
+        "path": "/rolls/manual/04.JPG",
+        "width": 2009,
+        "height": 1344
+      },
+      {
+        "path": "/rolls/manual/05.JPG",
+        "width": 2009,
+        "height": 1344
+      },
+      {
+        "path": "/rolls/manual/06.JPG",
+        "width": 2009,
+        "height": 1344
+      },
+      {
+        "path": "/rolls/manual/07.JPG",
+        "width": 2009,
+        "height": 1344
+      },
+      {
+        "path": "/rolls/manual/08.JPG",
+        "width": 2009,
+        "height": 1344
+      },
+      {
+        "path": "/rolls/manual/09.JPG",
+        "width": 2009,
+        "height": 1344
+      },
+      {
+        "path": "/rolls/manual/10.JPG",
+        "width": 2009,
+        "height": 1344
+      },
+      {
+        "path": "/rolls/manual/11.JPG",
+        "width": 2009,
+        "height": 1344
+      },
+      {
+        "path": "/rolls/manual/12.JPG",
+        "width": 2009,
+        "height": 1344
+      },
+      {
+        "path": "/rolls/manual/13.JPG",
+        "width": 2009,
+        "height": 1344
+      },
+      {
+        "path": "/rolls/manual/14.JPG",
+        "width": 2009,
+        "height": 1344
+      },
+      null,
+      {
+        "path": "/rolls/manual/16.JPG",
+        "width": 2009,
+        "height": 1344
+      },
+      {
+        "path": "/rolls/manual/17.JPG",
+        "width": 2009,
+        "height": 1344
+      },
+      {
+        "path": "/rolls/manual/18.JPG",
+        "width": 2009,
+        "height": 1344
+      },
+      {
+        "path": "/rolls/manual/19.JPG",
+        "width": 2009,
+        "height": 1344
+      },
+      null,
+      null,
+      {
+        "path": "/rolls/manual/22.JPG",
+        "width": 2009,
+        "height": 1344
+      },
+      {
+        "path": "/rolls/manual/23.JPG",
+        "width": 2009,
+        "height": 1344
+      },
+      {
+        "path": "/rolls/manual/24.JPG",
+        "width": 2009,
+        "height": 1344
+      },
+      {
+        "path": "/rolls/manual/25.JPG",
+        "width": 2009,
+        "height": 1344
+      },
+      {
+        "path": "/rolls/manual/26.JPG",
+        "width": 2009,
+        "height": 1344
+      },
+      {
+        "path": "/rolls/manual/27.JPG",
+        "width": 2009,
+        "height": 1344
+      },
+      {
+        "path": "/rolls/manual/28.JPG",
+        "width": 2009,
+        "height": 1344
+      },
+      {
+        "path": "/rolls/manual/29.JPG",
+        "width": 2009,
+        "height": 1344
+      },
+      {
+        "path": "/rolls/manual/30.JPG",
+        "width": 2009,
+        "height": 1344
+      },
+      {
+        "path": "/rolls/manual/31.JPG",
+        "width": 2009,
+        "height": 1344
+      },
+      {
+        "path": "/rolls/manual/32.JPG",
+        "width": 2009,
+        "height": 1344
+      },
+      {
+        "path": "/rolls/manual/33.JPG",
+        "width": 2009,
+        "height": 1344
+      },
+      {
+        "path": "/rolls/manual/34.JPG",
+        "width": 2009,
+        "height": 1344
+      },
+      {
+        "path": "/rolls/manual/35.JPG",
+        "width": 2009,
+        "height": 1344
+      },
+      {
+        "path": "/rolls/manual/36.JPG",
+        "width": 2009,
+        "height": 1344
+      },
+      {
+        "path": "/rolls/manual/37.JPG",
+        "width": 2009,
+        "height": 1344
+      },
+      {
+        "path": "/rolls/manual/38.JPG",
+        "width": 2009,
+        "height": 1344
+      }
+    ],
+    "camera": {
+      "brand": "Olympus",
+      "model": "Pen 1st Gen",
+      "notes": ""
+    },
+    "filmStock": {
+      "brand": "Kodak",
+      "model": "ColorPlus",
+      "speed": 200
+    }
+  }
 ];

@@ -9,6 +9,7 @@ type roll = {
   developedDate?: Date;
   forewordPath: string;
   epiloguePath?: string;
+  thumbnailPath?: string;
 }
 
 type image = {
@@ -16,6 +17,7 @@ type image = {
   width: number;
   height: number;
   alt?: string;
+  placeholderSrc?: string;
 }
 
 type camera = {

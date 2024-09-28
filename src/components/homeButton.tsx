@@ -1,19 +1,13 @@
 import Link from "next/link";
-import { Button } from "./ui/button";
-import { IconBackArrow } from "./icons";
+import { IconHome } from "./icons";
 
 export const HomeButton = ({...props}) => {
   return (
-    <Button 
-      title="Go home"
-      className="mt-4"
-      asChild
-      {...props}
-    >
-      <Link href="/">
-        <IconBackArrow className="mr-2" />
-        Go home
-      </Link>
-    </Button>
+    <Link title="Home" href="/" className="bg-slate-200 hover:bg-slate-300 active:ring-2 text-slate-950 rounded-full p-1">
+      <span className="text-3xl">
+        <IconHome />
+      </span>
+      <span className="sr-only">Home</span>
+    </Link>
   );
 };

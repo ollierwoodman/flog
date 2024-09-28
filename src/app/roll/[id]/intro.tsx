@@ -2,26 +2,25 @@ import Markdown from "@/components/markdown";
 
 const RollIntro = ({ roll, bgColorClassName, textColorClassName }: { roll: roll, bgColorClassName: string, textColorClassName: string }) => {
   return (
-    <>
-      <p className="absolute -top-1/4 text-[75vh] text-center leading-tight opacity-10">
-        {roll.chineseName}
-      </p>
-      <div className="flex-1 flex flex-col justify-center items-center w-full">
-        <h1 className="text-6xl bold">
+    <div className="flex flex-col min-w-[90vw] h-full p-4">
+      <div className="flex flex-col justify-center items-center h-full w-full">
+        <h1 className="flex-none text-6xl bold">
           {roll.name}
         </h1>
-        <p className="text-xl">
+        <p className="flex-none text-xl">
           {roll.description}
         </p>
-        <hr className="opacity-50 w-full my-3" />
-        <div className="flex-1 flex flex-col justify-center w-full overflow-y-scroll">
-          <Markdown
-            filePath={roll.forewordPath}
-            className="prose prose-invert text-start min-w-full max-w-full w-full"
-          />
+        <hr className="flex-none opacity-50 w-full my-3" />
+        <div className="flex-1 flex min-h-0">
+          <div className="flex flex-col justify-center h-full overflow-y-auto z-10">
+            <Markdown
+              filePath={roll.forewordPath}
+              className="prose prose-invert text-justify h-full p-4"
+            />
+          </div>
         </div>
-        <hr className="opacity-50 w-full my-3" />
-        <div className="flex flex-row justify-around gap-4">
+        <hr className="flex-none opacity-50 w-full my-3" />
+        <div className="flex-none flex flex-row justify-around gap-4">
           {roll.camera && (
             <p className="text-2xl font-bold mt-4">
               {roll.camera?.brand} {roll.camera?.model}
@@ -34,7 +33,7 @@ const RollIntro = ({ roll, bgColorClassName, textColorClassName }: { roll: roll,
           )}
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

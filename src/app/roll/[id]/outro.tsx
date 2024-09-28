@@ -1,15 +1,18 @@
 import Markdown from "@/components/markdown";
 
-const RollOutro = ({ epiloguePath, bgColorClassName, textColorClassName }: { epiloguePath: string, bgColorClassName: string, textColorClassName: string }) => {
+const RollOutro = ({ roll, bgColorClassName, textColorClassName }: { roll: roll, bgColorClassName: string, textColorClassName: string }) => {
+  if (!roll.epiloguePath) {
+    return null;
+  }
+  
   return (
-    <>
-      <div className="flex-1 flex flex-col justify-center w-full overflow-y-scroll">
-        <Markdown
-          filePath={epiloguePath}
-          className="prose prose-invert text-start min-w-full max-w-full w-full"
-        />
-      </div>
-    </>
+    <div className="flex flex-col justify-center items-center min-w-[90vw] h-[90vh] overflow-y-scroll">
+      {/* TODO: make this scrollable */}
+      <Markdown
+        filePath={roll.epiloguePath}
+        className="prose prose-invert text-justify h-full p-8"
+      />
+    </div>
   );
 };
 

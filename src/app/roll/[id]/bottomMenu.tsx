@@ -1,33 +1,25 @@
 "use client";
-import { Button } from "@/components/ui/button";
+import { HomeButton } from "@/components/homeButton";
+import { IconArrowLeftCircle } from "@/components/icons";
 import { RefObject } from "react";
 
-const bottomMenu = ({scrollingContainerRef}: {scrollingContainerRef: RefObject<HTMLDivElement>}) => {
+const BottomMenu = ({
+  
+}: {
+
+}) => {
   return (
-    <div className="fixed bottom-2 right-2 z-50">
-      <Button
-        title="Back to start"
-        variant="secondary"
-        className="mr-2"
-        disabled={scrollingContainerRef.current === null}
-        onClick={() => {
-          scrollingContainerRef.current?.scrollTo(0, 0);
-        }}
+    <div className={`fixed z-50 bottom-0 right-0 w-min flex flex-row justify-center items-center bg-slate-200 bg-opacity-75 rounded-full mx-2 my-4 p-4 gap-2`}>
+      <HomeButton />
+      {/* <button 
+        title="Back to start" 
+        className="bg-slate-200 text-3xl text-slate-950 rounded-full p-1"
       >
-        Back to start
-      </Button>
-      <Button
-        title="Skip to end"
-        variant="secondary"
-        disabled={scrollingContainerRef.current === null}
-        onClick={() => {
-          scrollingContainerRef.current?.scrollTo(document.body.scrollWidth, 0);
-        }}
-      >
-        Skip to end
-      </Button>
+        <IconArrowLeftCircle />
+        <span className="sr-only">Back to start</span>
+      </button> */}
     </div>
   );
 };
 
-export default bottomMenu;
+export default BottomMenu;

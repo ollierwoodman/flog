@@ -8,12 +8,12 @@ rolls = []
 for folder in os.listdir("./public/rolls"):
   images = []
   # for each image file in /public/rolls/{folder}
-  for file in os.listdir(f"./public/rolls/{folder}"):
-    if not (file.endswith(".jpg") or file.endswith(".png")):
+  for filename in os.listdir(f"./public/rolls/{folder}"):
+    if not (filename.lower().endswith(".jpg") or filename.lower().endswith(".png")):
       continue
     
     # get the image path and image width and height
-    imagePath = f"/rolls/{folder}/{file}"
+    imagePath = f"/rolls/{folder}/{filename}"
     
     # get the image width and height
     imageWidth, imageHeight = Image.open(f"./public{imagePath}").size
@@ -31,6 +31,9 @@ for folder in os.listdir("./public/rolls"):
     'chineseName': '',
     'description': '',
     'developedDate': '',
+    'forewordPath': f"/public/rolls/{folder}/foreword.md",
+    'epiloguePath': f"/public/rolls/{folder}/epilogue.md",
+    'thumbnailPath': '/public/roll_thumbs/...',
     'images': images,
     'camera': {
       'brand': "Olympus",
