@@ -7,7 +7,7 @@ export const ROLLS: roll[] = [
     developedDate: new Date(2024, 10, 12),
     forewordPath: "/rolls/first/foreword.md",
     epiloguePath: "/rolls/first/epilogue.md",
-    thumbnailPath: "/roll_thumbs/first.JPG",
+    thumbnailPath: "/roll_thumbs/first.jpg",
     images: [
       {
         path: "/rolls/first/00.jpg",
@@ -208,7 +208,7 @@ export const ROLLS: roll[] = [
     developedDate: new Date(2024, 10, 24),
     forewordPath: "/rolls/manual/foreword.md",
     epiloguePath: "/rolls/manual/epilogue.md",
-    thumbnailPath: "/roll_thumbs/manual.JPG",
+    thumbnailPath: "/roll_thumbs/manual.jpg",
     "images": [
       {
         "path": "/rolls/manual/00.JPG",
